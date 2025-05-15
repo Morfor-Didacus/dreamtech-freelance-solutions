@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LearnHub Tutorials</title>
+  <!-- Prism.js CSS for Syntax Highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+    }
+    h1, h2, h3 {
+      color:blue;
+    }
+    .tutorial {
+      background: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .tutorial .copy-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: orange;
+      border: none;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .tutorial .copy-btn:hover {
+      background: green;
+      color:#fff;
+    }
+    pre {
+      background: #282c34;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+  header, footer {
+      background: #3b2762;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color:#fff;
+    }
+    footer p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+  @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+  }
+  header img.logo {
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+      <img src="dlogo.png" alt="Logo" class="logo" />
+    <h1>HTML Tutorial Series</h1>
+    <p>Learn HTML from scratch with hands-on examples and explanations</p>
+  </header>
+  <!-- Tutorial 1: Introduction to HTML -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-1">Copy</button>
+    <h3>Tutorial 1: Introduction to HTML</h3>
+    <p>Learn what HTML is and why it is the backbone of any web page. HTML provides the structure for web content.</p>
+    <pre><code class="language-html" id="code-1">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Introduction to HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to HTML!&lt;/h1&gt;
+    &lt;p&gt;HTML stands for HyperText Markup Language.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 2: Basic Structure of an HTML Document -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-2">Copy</button>
+    <h3>Tutorial 2: Basic Structure of an HTML Document</h3>
+    <p>This tutorial explains the fundamental structure required for any HTML document, including the DOCTYPE, html, head, and body tags.</p>
+    <pre><code class="language-html" id="code-2">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Basic HTML Structure&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;&lt;h1&gt;Header Section&lt;/h1&gt;&lt;/header&gt;
+    &lt;main&gt;&lt;p&gt;Main content goes here.&lt;/p&gt;&lt;/main&gt;
+    &lt;footer&gt;&lt;p&gt;Footer information.&lt;/p&gt;&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 3: HTML Headings and Paragraphs -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-3">Copy</button>
+    <h3>Tutorial 3: HTML Headings and Paragraphs</h3>
+    <p>Learn how to use heading tags (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) and paragraphs (<code>&lt;p&gt;</code>) to organize content.</p>
+    <pre><code class="language-html" id="code-3">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Headings and Paragraphs&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is an H1 Heading&lt;/h1&gt;
+    &lt;h2&gt;This is an H2 Heading&lt;/h2&gt;
+    &lt;p&gt;This is a paragraph of text explaining the headings.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 4: HTML Links and Anchors -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-4">Copy</button>
+    <h3>Tutorial 4: HTML Links and Anchors</h3>
+    <p>Understand how to create hyperlinks using the anchor tag (<code>&lt;a&gt;</code>). Links can point to external pages or other sections within the page.</p>
+    <pre><code class="language-html" id="code-4">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Links and Anchors&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;
+    &lt;p&gt;Click the link above to visit an external website.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 5: HTML Images and Alt Text -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-5">Copy</button>
+    <h3>Tutorial 5: HTML Images and Alt Text</h3>
+    <p>This tutorial covers how to embed images using the <code>&lt;img&gt;</code> tag and why including the alt attribute is essential for accessibility.</p>
+    <pre><code class="language-html" id="code-5">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Images and Alt Text&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src="image.jpg" alt="Description of image" width="300"&gt;
+    &lt;p&gt;The alt attribute helps describe the image.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 6: HTML Lists (Ordered & Unordered) -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-6">Copy</button>
+    <h3>Tutorial 6: HTML Lists (Ordered &amp; Unordered)</h3>
+    <p>Learn how to create ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>) with list items (<code>&lt;li&gt;</code>).</p>
+    <pre><code class="language-html" id="code-6">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Lists&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2&gt;Ordered List&lt;/h2&gt;
+    &lt;ol&gt;
+      &lt;li&gt;First item&lt;/li&gt;
+      &lt;li&gt;Second item&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;h2&gt;Unordered List&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Item one&lt;/li&gt;
+      &lt;li&gt;Item two&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 7: HTML Tables -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-7">Copy</button>
+    <h3>Tutorial 7: HTML Tables</h3>
+    <p>Tables help display data in rows and columns. This tutorial shows how to create tables with headers and data cells.</p>
+    <pre><code class="language-html" id="code-7">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;HTML Table&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table border="1"&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 8: HTML Forms -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-8">Copy</button>
+    <h3>Tutorial 8: HTML Forms</h3>
+    <p>Forms collect user input. In this tutorial, we build a simple form with text fields and a submit button.</p>
+    <pre><code class="language-html" id="code-8">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Simple Form&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action="/submit" method="post"&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" name="username" required&gt;
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 9: HTML Input Types -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-9">Copy</button>
+    <h3>Tutorial 9: HTML Input Types</h3>
+    <p>Explore various input types like text, email, number, password, etc., to build interactive forms.</p>
+    <pre><code class="language-html" id="code-9">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Input Types&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form&gt;
+      &lt;input type="text" placeholder="Text input"&gt;
+      &lt;input type="email" placeholder="Email input"&gt;
+      &lt;input type="number" placeholder="Number input"&gt;
+      &lt;input type="password" placeholder="Password"&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 10: HTML Semantic Elements -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-10">Copy</button>
+    <h3>Tutorial 10: HTML Semantic Elements</h3>
+    <p>Semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> improve accessibility and SEO.</p>
+    <pre><code class="language-html" id="code-10">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Semantic Elements&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;&lt;h1&gt;Site Title&lt;/h1&gt;&lt;/header&gt;
+    &lt;nav&gt;&lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;li&gt;About&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;
+    &lt;section&gt;&lt;p&gt;Main content here.&lt;/p&gt;&lt;/section&gt;
+    &lt;footer&gt;&lt;p&gt;Footer info.&lt;/p&gt;&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 11: HTML Audio & Video -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-11">Copy</button>
+    <h3>Tutorial 11: HTML Audio &amp; Video</h3>
+    <p>Embed multimedia files using the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements.</p>
+    <pre><code class="language-html" id="code-11">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Audio &amp; Video&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;audio controls&gt;
+      &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+      Your browser does not support the audio element.
+    &lt;/audio&gt;
+    &lt;video controls width="320"&gt;
+      &lt;source src="video.mp4" type="video/mp4"&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 12: HTML Iframes -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-12">Copy</button>
+    <h3>Tutorial 12: HTML Iframes</h3>
+    <p>Use the <code>&lt;iframe&gt;</code> tag to embed another webpage or content within your page.</p>
+    <pre><code class="language-html" id="code-12">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Iframes&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src="https://www.example.com" width="600" height="400"&gt;
+      Your browser does not support iframes.
+    &lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 13: HTML Blockquote and Citation -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-13">Copy</button>
+    <h3>Tutorial 13: HTML Blockquote and Citation</h3>
+    <p>Use the <code>&lt;blockquote&gt;</code> element to denote quotations, along with <code>&lt;cite&gt;</code> to reference the source.</p>
+    <pre><code class="language-html" id="code-13">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Blockquote Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;blockquote&gt;
+      &quot;The only limit to our realization of tomorrow is our doubts of today.&quot;
+      &lt;cite&gt;- Franklin D. Roosevelt&lt;/cite&gt;
+    &lt;/blockquote&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 14: HTML Code &amp; Preformatted Text -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-14">Copy</button>
+    <h3>Tutorial 14: HTML Code &amp; Preformatted Text</h3>
+    <p>Display code snippets or preserve whitespace using the <code>&lt;code&gt;</code> and <code>&lt;pre&gt;</code> tags.</p>
+    <pre><code class="language-html" id="code-14">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Code Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;pre&gt;
+      &lt;code&gt;
+        &lt;p&gt;This is a code snippet.&lt;/p&gt;
+      &lt;/code&gt;
+    &lt;/pre&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 15: HTML Entities -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-15">Copy</button>
+    <h3>Tutorial 15: HTML Entities</h3>
+    <p>HTML entities are used to display reserved characters. For example, use <code>&amp;amp;</code> for &amp;.</p>
+    <pre><code class="language-html" id="code-15">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;HTML Entities&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;5 &amp;amp; 10 equals 5 &amp;amp; 10&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 16: HTML Comments -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-16">Copy</button>
+    <h3>Tutorial 16: HTML Comments</h3>
+    <p>Comments are used to leave notes in the code without affecting the output.</p>
+    <pre><code class="language-html" id="code-16">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Comments Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- This is a comment and will not be displayed --&gt;
+    &lt;p&gt;Comments help document your code.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 17: HTML Attributes -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-17">Copy</button>
+    <h3>Tutorial 17: HTML Attributes</h3>
+    <p>Attributes provide additional information about HTML elements. In this tutorial, see how attributes work in practice.</p>
+    <pre><code class="language-html" id="code-17">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Attributes Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a href="https://www.example.com" title="Visit Example"&gt;Example Link&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 18: HTML Div and Span -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-18">Copy</button>
+    <h3>Tutorial 18: HTML Div and Span</h3>
+    <p>The <code>&lt;div&gt;</code> element is used as a container block, while <code>&lt;span&gt;</code> is used for inline grouping.</p>
+    <pre><code class="language-html" id="code-18">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Div and Span&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div style="background: #eee; padding: 10px;"&gt;
+      &lt;span style="color: red;"&gt;This is an inline span inside a div.&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 19: HTML Document Structure with Sectioning Elements -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-19">Copy</button>
+    <h3>Tutorial 19: Document Structure with Sectioning Elements</h3>
+    <p>Utilize sectioning elements such as <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code> to create a logical document structure.</p>
+    <pre><code class="language-html" id="code-19">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sectioning Elements&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;&lt;h1&gt;Site Header&lt;/h1&gt;&lt;/header&gt;
+    &lt;nav&gt;&lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;li&gt;Services&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;
+    &lt;section&gt;&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;p&gt;Article content.&lt;/p&gt;&lt;/article&gt;&lt;/section&gt;
+    &lt;aside&gt;&lt;p&gt;Sidebar content.&lt;/p&gt;&lt;/aside&gt;
+    &lt;footer&gt;&lt;p&gt;Footer Info&lt;/p&gt;&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 20: HTML Meta Tags &amp; SEO Basics -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-20">Copy</button>
+    <h3>Tutorial 20: Meta Tags &amp; SEO Basics</h3>
+    <p>Learn about meta tags, which provide metadata about the HTML document and help with search engine optimization.</p>
+    <pre><code class="language-html" id="code-20">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="Learn HTML meta tags"&gt;
+    &lt;meta name="keywords" content="HTML, meta, SEO"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Meta Tags Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Meta tags help improve SEO.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 21: HTML Scripts &amp; External JS -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-21">Copy</button>
+    <h3>Tutorial 21: HTML Scripts &amp; External JS</h3>
+    <p>Learn how to embed JavaScript in HTML using the <code>&lt;script&gt;</code> tag. External scripts can be linked as well.</p>
+    <pre><code class="language-html" id="code-21">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Scripts Example&lt;/title&gt;
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;JavaScript is included via external files.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 22: HTML Styles &amp; Inline CSS -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-22">Copy</button>
+    <h3>Tutorial 22: HTML Styles &amp; Inline CSS</h3>
+    <p>Use inline CSS to quickly style an element. Although external CSS is preferred, inline styles are sometimes useful.</p>
+    <pre><code class="language-html" id="code-22">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Inline CSS Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="color: blue; font-size: 18px;"&gt;This text is styled inline.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 23: HTML Accessibility Attributes -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-23">Copy</button>
+    <h3>Tutorial 23: HTML Accessibility Attributes</h3>
+    <p>Improve web accessibility by using ARIA attributes and proper semantic tags.</p>
+    <pre><code class="language-html" id="code-23">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Accessibility Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button aria-label="Close" onclick="alert('Closed!')"&gt;X&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 24: HTML Canvas Basics -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-24">Copy</button>
+    <h3>Tutorial 24: HTML Canvas Basics</h3>
+    <p>The <code>&lt;canvas&gt;</code> element lets you draw graphics on the fly using JavaScript.</p>
+    <pre><code class="language-html" id="code-24">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Canvas Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"&gt;
+      Your browser does not support the canvas element.
+    &lt;/canvas&gt;
+    &lt;script&gt;
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = 'green';
+      ctx.fillRect(10, 10, 100, 50);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 25: HTML SVG Integration -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-25">Copy</button>
+    <h3>Tutorial 25: HTML SVG Integration</h3>
+    <p>Integrate scalable vector graphics (SVG) directly into your HTML for crisp, resolution-independent images.</p>
+    <pre><code class="language-html" id="code-25">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;SVG Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;svg width="100" height="100"&gt;
+      &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
+    &lt;/svg&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 26: HTML Microdata &amp; Schema -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-26">Copy</button>
+    <h3>Tutorial 26: HTML Microdata &amp; Schema</h3>
+    <p>Add semantic meaning to your pages by using microdata attributes. This helps search engines better understand your content.</p>
+    <pre><code class="language-html" id="code-26">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" itemscope itemtype="http://schema.org/Article"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Microdata Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 itemprop="headline"&gt;Article Title&lt;/h1&gt;
+    &lt;p itemprop="articleBody"&gt;This is the article content.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 27: HTML Responsive Images -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-27">Copy</button>
+    <h3>Tutorial 27: HTML Responsive Images</h3>
+    <p>Use responsive image techniques to serve different images based on screen size.</p>
+    <pre><code class="language-html" id="code-27">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Responsive Images&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src="small.jpg" srcset="small.jpg 500w, large.jpg 1000w" alt="Responsive Image"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 28: HTML Picture Element -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-28">Copy</button>
+    <h3>Tutorial 28: HTML Picture Element</h3>
+    <p>The <code>&lt;picture&gt;</code> element allows you to define multiple sources for an image for better responsiveness.</p>
+    <pre><code class="language-html" id="code-28">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Picture Element Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;picture&gt;
+      &lt;source media="(min-width: 650px)" srcset="large.jpg"&gt;
+      &lt;source media="(min-width: 465px)" srcset="medium.jpg"&gt;
+      &lt;img src="small.jpg" alt="Responsive Picture"&gt;
+    &lt;/picture&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 29: HTML Data Attributes -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-29">Copy</button>
+    <h3>Tutorial 29: HTML Data Attributes</h3>
+    <p>Data attributes allow you to store extra information on any HTML element.</p>
+    <pre><code class="language-html" id="code-29">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Data Attributes&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div data-user="JohnDoe" data-age="30"&gt;User Info&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Tutorial 30: HTML Custom Elements (Web Components) -->
+  <div class="tutorial">
+    <button class="copy-btn" data-target="code-30">Copy</button>
+    <h3>Tutorial 30: HTML Custom Elements (Web Components)</h3>
+    <p>Create your own custom HTML elements using the Web Components standard.</p>
+    <pre><code class="language-html" id="code-30">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Custom Elements&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Define a custom element --&gt;
+    &lt;script&gt;
+      class MyElement extends HTMLElement {
+        constructor() {
+          super();
+          this.innerHTML = "&lt;p&gt;This is a custom element.&lt;/p&gt;";
+        }
+      }
+      customElements.define('my-element', MyElement);
+    &lt;/script&gt;
+    &lt;my-element&gt;&lt;/my-element&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <!-- Copy Button Script -->
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const codeBlock = document.getElementById(targetId);
+        if (codeBlock) {
+          // Create a temporary textarea element
+          const textarea = document.createElement('textarea');
+          textarea.value = codeBlock.textContent;
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand('copy');
+            button.textContent = 'Copied!';
+            setTimeout(() => button.textContent = 'Copy', 2000);
+          } catch (err) {
+            console.error('Unable to copy', err);
+          }
+          document.body.removeChild(textarea);
+        }
+      });
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Dreamtech LearnHub. All rights reserved.</p>
+    <p>Follow us on <a href="#" style="color: #fff; text-decoration: underline;">Twitter</a> | <a href="#" style="color: #fff; text-decoration: underline;">YouTube</a></p>
+  </footer>
+  <!-- Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>

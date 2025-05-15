@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LearnHub – DreamTech</title>
+  <style>
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background:#3b2762 ;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    header img.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      width: 40px;
+    }
+    header h1 {
+      font-size: 1.5em;
+      margin: auto;
+    }
+    .back-btn {
+      background: white;
+      color: #4B0082;
+      border: none;
+      padding: 8px 14px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      animation: fadeInUp 1s ease;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #4B0082;
+    }
+    .hero p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .search-container {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .search-container input {
+      width: 80%;
+      padding: 10px;
+      font-size: 1em;
+      border: 2px solid #4B0082;
+      border-radius: 8px;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      color: #4B0082;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+    .link-btn {
+      background: orange;
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .card button:hover {
+      background: #ffd700cc;
+    }
+    footer {
+      background: #4B0082;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  
+  
+ 
+  .card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .link-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .link-btn:hover {
+    color: #0b57d0;
+    text-decoration: underline;
+  }
+
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <img src="dlogo.png" alt="Logo" class="logo" />
+    <h1>LearnHub</h1>
+    <button class="back-btn" onclick="history.back()">←Home</button>
+  </header>
+
+  <section class="hero">
+    <h2>Boost Your Digital Skills</h2>
+    <p>Explore courses, download resources, and watch tutorials for free.</p>
+  </section>
+
+  <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search courses..." />
+
+  </div>
+
+  <section id="courseGrid" class="grid"></section>
+
+  <footer>
+    <p>&copy; 2025 DreamTech LearnHub. Empowering Innovators Daily.</p>
+  </footer>
+</body>
+
+
+<script>
+  const courses = [
+    {
+      title: "Web Development",
+      description: "Learn HTML, CSS, JavaScript, React, and more. Build real-world websites and apps.",
+      button: "Start Learning",
+      link: "web development.html"
+    },
+    {
+      title: "Graphics Design",
+      description: "Master tools like Canva and Photoshop. Create logos, flyers, and brand kits.",
+      button: "Explore Now",
+      link: "graphic.html"
+    },
+    {
+      title: "Mobile App Dev",
+      description: "Begin with Flutter or React Native and start building powerful mobile apps.",
+      button: "Get Started",
+      link: "app-dev.html"
+    },
+    {
+      title: "Freelancing & Monetization",
+      description: "Learn how to earn through Upwork, Fiverr, and other freelance platforms.",
+      button: "View Guide",
+      link: "https://dreamtech-freelance.ct.ws/"
+    },
+    {
+      title: "PDF & Video Resources",
+      description: "Access downloadable materials, video lectures, and cheat sheets.",
+      button: "Download Files",
+      link: "#"
+    },
+    {
+      title: "Community Projects",
+      description: "Collaborate on real-world tasks and showcase your skills with peers.",
+      button: "Join Team",
+      link: "#"
+    }
+  ];
+
+  const courseGrid = document.getElementById("courseGrid");
+  const searchInput = document.getElementById("searchInput");
+
+  function renderCourses(filteredCourses) {
+    courseGrid.innerHTML = "";
+    filteredCourses.forEach(course => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <h3>${course.title}</h3>
+        <p>${course.description}</p>
+        <a href="${course.link}" class="link-btn">${course.button}</a>
+      `;
+      courseGrid.appendChild(card);
+    });
+  }
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    const filtered = courses.filter(course =>
+      course.title.toLowerCase().includes(query) ||
+      course.description.toLowerCase().includes(query)
+    );
+    renderCourses(filtered);
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    renderCourses(courses);
+  });
+</script>
+
+<style>
+  
+</style>
+</html>

@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamTech Freelance Solutions</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- start webpushr code --> <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'BB3O3wiwLRI_nqt39IUeecqfK-MWsSZRKHC6yGiie0gqsW1MSwi0XLWSaou2u56EcKqrH0W-hwTj8KGyFq4BW_k' });</script><!-- end webpushr code -->
+  <style>
+  html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+  header {
+  background:#3b2762 ;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: height 0.4s ease;
+  overflow: hidden;
+  
+}
+
+/* Mobile portrait only */
+@media (max-width: 768px) and (orientation: portrait) {
+  header {
+    height: 120px; /* default compact height */
+  }
+
+  header.nav-open {
+    height: 400px; /* expands only when drawer is open */
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  flex: 1;
+}
+
+header img {
+  height: 60px;
+}
+
+.text-group h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.text-group p {
+  margin: 4px 0 0;
+  font-size: 0.95em;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1002;
+}
+
+/* Nav shared styles */
+nav#mainNav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+nav#mainNav a {
+  color:#000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav#mainNav a:hover {
+  color: gold;
+}
+
+/* Mobile portrait only */
+@media (max-width: 768px) and (orientation: portrait) {
+  .header-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav#mainNav {
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  backdrop-filter: blur(10px); /* subtle blur effect */
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 10);
+  overflow: hidden;
+  margin: 0px 30px;
+  
+  border-radius:10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav#mainNav.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav#mainNav a {
+  display: block;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #222;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav#mainNav a:last-child {
+  border-bottom: none;
+}
+
+nav#mainNav a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #4B0082;
+}
+}
+
+@media (min-width: 769px), (orientation: landscape) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: nowrap;
+  }
+
+  .left-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header img {
+    height: 50px;
+  }
+  nav#mainNav a {
+    color:#fff;
+  }
+
+  nav#mainNav {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    position: static;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+    background: transparent;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+    .hero {
+      padding: 10px 15px;
+      text-align: center;
+      background: url('https://www.transparenttextures.com/patterns/arches.png');
+      animation: fadeIn 2s ease-out;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color:orange;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #333;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      color: #4B0082;
+      font-size: 1.8em;
+      margin-bottom: 5px;
+    }
+    .card {
+      background: #fff;
+      margin-bottom:-50px;
+      padding: 20px;
+      border-left: 5px solid orange;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+  margin: 0 !important;
+  padding: 40px 20px 10px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  background: #1a1a1a;
+  color: #eee;
+  bottom:0;
+ float:bottom;
+  z-index:10000;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.footer-container {
+  margin-left:-100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  width:100%;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column li,
+.footer-column a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+    button {
+      background: gold;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px gold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    /* Popup and overlay */
+    #popupOverlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 100, 0.3);
+      display: none;
+      z-index: 999;
+    }
+    #askPopup {
+      position: fixed;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+      animation: popFade 0.5s ease-out;
+    }
+    #askPopup input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    @keyframes popFade {
+      from { opacity: 0; transform: translate(-50%, -30%);}
+      to { opacity: 1; transform: translate(-50%, 0);}
+    }
+
+    .social-icons a {
+      color: gold;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: white;
+    }
+  
+  #welcomeMessage {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#333;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    z-index: 1001;
+    animation: fadeSlideDown 1s ease-out;
+    font-size: 1.2em;
+  }
+
+  @keyframes fadeSlideDown {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -30px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .welcome-text .brand {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .welcome-text .username {
+    color:gold;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  button {
+      background: orange;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #countdown {
+      font-weight: bold;
+      color: crimson;
+    }
+.full-width-image-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+    .full-width-image {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.full-width-image.active {
+  opacity: 1;
+  position: relative;
+}
+.star-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.star-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: green;
+  flex-shrink: 0;
+}
+
+.text {
+  flex: 1;
+}
+  .join-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color:#3b2762;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.join-btn:hover {
+  background-color:purple;
+}
+  
+  #tips {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+#tips .section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #1e8e3e;
+  border-bottom: 3px solid #1e8e3e;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#tips .card {
+  background: #ffffff;
+  border-left: 5px solid #4caf50;
+  padding: 20px 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#tips .card h4 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+#tips .card p {
+  color: #444;
+  line-height: 1.6;
+}
+  #downloads {
+  padding: 60px 20px;
+  background-color: #e3f2fd;
+}
+
+#downloads .section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #1976d2;
+  border-bottom: 3px solid #1976d2;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#downloads .download-item {
+  background-color: #ffffff;
+  border-left: 5px solid #2196f3;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 750px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+#downloads .download-item h4 {
+  color: #1565c0;
+  margin-bottom: 8px;
+}
+
+#downloads .download-item a {
+  color: #0d47a1;
+  text-decoration: underline;
+  font-weight: 500;
+}
+  
+  #testimonials {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+.testimonial-card {
+  display: none;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #3b2762 ;
+  transition: opacity 0.5s ease-in-out;
+}
+.testimonial-card.active {
+  display: block;
+}
+.testimonial-card .author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+  .faq-card {
+  max-width: 800px;
+  margin: auto;
+  boder-radius:8px;
+  background-color:#fff;
+  padding: 5px;
+}
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background: #f1f1f1;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.faq-question:hover {
+  background: #e0e0e0;
+}
+.faq-answer {
+  padding: 10px 15px;
+  display: none;
+  background: #fafafa;
+  border-left: 3px solid #007bff;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+  
+  #contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+#contact input, #contact textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+#contact button {
+  padding: 10px 20px;
+  background: #3b2762;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.status-msg {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.status-msg.show {
+  opacity: 1;
+}
+.loader {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+}
+.loader span {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #007bff;
+  border-radius: 50%;
+  animation: bounce 0.8s infinite alternate;
+}
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+  
+  .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 5px;
+  z-index: 10;
+}
+
+.img-loader span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #007bff;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.img-loader span:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #28a745;
+}
+
+.img-loader span:nth-child(3) {
+  animation-delay: 0.4s;
+  background: #ffc107;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+    opacity: 0.7;
+  }
+}
+  .review-section {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+.review-container {
+  max-width: 600px;
+  margin: auto;
+}
+.rating-display {
+  margin: 20px 0;
+}
+.stars {
+  font-size: 2rem;
+  color: gold;
+  animation: bounce 1.5s ease infinite;
+}
+.star.half::after {
+  content: '★';
+  position: absolute;
+  margin-left: -1em;
+  width: 50%;
+  overflow: hidden;
+  display: inline-block;
+  color: lightgray;
+}
+.rating-text {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 10px;
+}
+.cta-review p {
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+.review-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.review-button:hover {
+  background-color: #005bb5;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="header-container">
+    <div class="left-header">
+      <img src="dreamtech-logo.png" alt="Logo">
+      <div class="text-group">
+        <h1>DreamTech Freelance Solutions</h1>
+        <p>Empowering Learners, Creators, and Innovators</p>
+      </div>
+    </div>
+    <div class="hamburger" onclick="toggleDrawer()">&#9776;</div>
+  </div>
+ <nav id="mainNav">
+  <a href="LearnHub .html"><i class="material-icons">school</i> LearnHub</a>
+  <a href="services.html"><i class="material-icons">work_outline</i> Services</a>
+  <a href="projects.html"><i class="material-icons">assignment</i> Projects</a>
+  <a href="developer.html"><i class="material-icons">person</i> Developer</a>
+</nav>
+</header>
+
+  <section class="hero">
+    <h1>Welcome to <b style="color:#4B0082;">DreamTech</b></h1>
+    <p>Your journey to impactful digital transformation starts here. Create, Grow, Succeed.</p>
+    <button> <a href="https://wa.me/+237675874638" style="text-decoration:none; color:#000;">Hire Us </a></button>
+  </section>
+  
+<div class="full-width-image-container" id="slider">
+  <img src="service-image1.png" alt="Slide 1" class="full-width-image active" />
+  <img src="service-image2.png" alt="Slide 2" class="full-width-image" />
+  <img src="service-image3.png" alt="Slide 3" class="full-width-image" />
+  <img src="service-image4.png" alt="Slide 4" class="full-width-image" />
+  <img src="service-image5.png" alt="Slide 5" class="full-width-image" />
+  <img src="service-image6.png" alt="Slide 6" class="full-width-image" />
+  <img src="service-image7.png" alt="Slide 7" class="full-width-image" />
+     </div>
+  
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="card">
+<p><strong>DreamTech Solutions</strong> is committed to equipping individuals and businesses with impactful digital solutions. We focus on delivering practical knowledge, innovative strategies, and hands-on experience that drive growth and visibility in today's fast-evolving digital world.</p>  
+<p>Whether you're starting from scratch or looking to scale, our community offers the tools, support, and real-world exposure needed to turn ideas into measurable results.</p>
+ </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="card">
+  <ul class="star-list">
+  <li><span class="star">&#9733;</span><span class="text">Smart digital solutions tailored for individuals and businesses</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Innovative tools and strategies to power your online presence</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Streamlined systems for growth, visibility, and engagement</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Creative solutions that transform ideas into impact</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Digital support built to drive performance and revenue</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Reliable tech services, resources, and a results-focused team</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Learn essential digital skills through practical, guided training</span></li>
+  <li><span class="star">&#9733;</span><span class="text">Access free tutorials, downloadable materials, and mentorship</span></li>
+</ul>
+</div>
+  </section>
+  <!-- Dynamic Event Section -->
+  <section id="events">
+    <h2 class="section-title">Upcoming Event</h2>
+    <div class="card">
+      <p><strong>Next Live Workshop:</strong> LearnHub Launch Masterclass</p>
+      <p><strong>Starts In:</strong> <span id="countdown">Loading...</span></p>
+      <a href="https://chat.whatsapp.com/LMkMmIHk2zv9rJ9wkQ4mSY" class="join-btn" target="_blank" style="background:orange; color:#000;">Join Event</a>
+    </div>
+  </section>
+  
+  <section id="events">
+  <h2 class="section-title">Current Event</h2>
+  <div class="card">
+    <p><strong>Now Live:</strong> DreamTech Digital Power Series</p>
+    <p>Explore strategies in branding, marketing, and tech integration that drive real business impact.</p>
+    <p><strong>Time Now:</strong> <span id="currentTime" style="color:green; font-weight:bold;">Loading...</span></p>
+    <a href="https://chat.whatsapp.com/B5AJ9FCAsI54IoiUrnN5fn" class="join-btn" target="_blank">Join Event</a>
+  </div>
+  
+  <section style="padding: 30px 20px;">
+  <h2 class="section-title">Service Gallery</h2>
+ <div style="display: flex; overflow-x: auto; gap: 10px; margin-top: 20px;">
+  <div class="image-wrapper">
+    <div class="img-loader"><span></span><span></span><span></span></div>
+    <img src="image3.png" style="height: 150px; border-radius: 10px;" onload="hideLoader(this)" />
+  </div>
+  <div class="image-wrapper">
+    <div class="img-loader"><span></span><span></span><span></span></div>
+    <img src="image2.png" style="height: 150px; border-radius: 10px;" onload="hideLoader(this)" />
+  </div>
+  <div class="image-wrapper">
+    <div class="img-loader"><span></span><span></span><span></span></div>
+    <img src="image5.png" style="height: 150px; border-radius: 10px;" onload="hideLoader(this)" />
+  </div>
+  <div class="image-wrapper">
+    <div class="img-loader"><span></span><span></span><span></span></div>
+    <img src="image4.png" style="height: 150px; border-radius: 10px;" onload="hideLoader(this)" />
+  </div>
+  <div class="image-wrapper">
+    <div class="img-loader"><span></span><span></span><span></span></div>
+    <img src="image1.png" style="height: 150px; border-radius: 10px;" onload="hideLoader(this)" />
+  </div>
+  <div class="image-wrapper">
+    <div class="img-loader"><span></span><span></span><span></span></div>
+    <img src="image6.png" style="height: 150px; border-radius: 10px;" onload="hideLoader(this)" />
+  </div>
+</div>
+</section>
+
+  <section id="community">
+    <h2 class="section-title">Our Community</h2>
+    <div class="card">
+<p>Our community consists of professionals specializing in web and app development, SEO, digital marketing, graphic design, branding, and more. We collaborate to create innovative solutions that help businesses enhance their online presence and achieve sustainable growth.</p>
+<p>Our goal is to bring together experts who are dedicated to delivering impactful, high-quality services that drive success for brands, while connecting businesses to valuable opportunities in both local and global tech markets.</p>
+</div>
+  </section>
+  
+  
+
+  <!-- Quick Contact Form -->
+ <section id="contact">
+  <h2 class="section-title">Send Us a Message</h2>
+   <div class="card">
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <div class="loader" id="loader">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="status-msg" id="statusMsg"></div>
+  </form>
+   </div>
+</section>
+    
+    <section id="tips">
+  <h2 class="section-title">Tips & Insights</h2>
+  <div class="card">
+    <h4>Boost Your Online Presence</h4>
+    <p>Stay ahead with tips on growing your brand visibility, improving site performance, and leveraging digital tools.</p>
+  </div>
+  <div class="card">
+    <h4>Choosing the Right Tech Stack</h4>
+    <p>We guide you in selecting technologies that scale with your business goals and digital demands.</p>
+  </div>
+</section>
+    
+    <section id="downloads">
+  <h2 class="section-title">Free Downloadables</h2>
+  <div class="download-item">
+    <h4>HTML Beginner to Pro Guide</h4>
+    <a href="https://dreamtech-freelance.ct.ws/Intro to html.pdf" download>Download PDF</a>
+  </div>
+  <div class="download-item">
+    <h4>SEO Cheat Sheet</h4>
+    <a href="https://dreamtech-freelance.ct.ws/Seo.pdf" download>Download PDF</a>
+  </div>
+</section>
+    
+<section id="testimonials">
+  <h2 class="section-title">Success & Testimonials</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial-card active">
+      <p>"DreamTech LearnHub helped me build my first portfolio website and get freelance clients within 2 months!"</p>
+      <div class="author">Chinedu K., Nigeria</div>
+    </div>
+    <div class="testimonial-card">
+      <p>"I knew nothing about SEO before DreamTech. Now I rank my own business and others on Google!"</p>
+      <div class="author">John M., Ghana</div>
+    </div>
+    <div class="testimonial-card">
+      <p>"Thanks much for accepting my request to join Dreamtech LearnHub , i have really learned a lot "</p>
+      <div class="author">Anu Ryan., Cameroon</div>
+    </div>
+    <!-- Add more testimonials as needed -->
+  </div>
+</section>
+    
+    <!-- Newsletter Subscription -->
+  <section id="newsletter">
+    <h2 class="section-title">Subscribe to Newsletter</h2>
+    <div class="card">
+      <p>Stay updated with our latest offers, trainings, and freelance opportunities.</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </div>
+  </section>
+    
+    <!-- Google Review Section -->
+<section class="review-section">
+  <div class="review-container">
+    <h2>What People Say About Us</h2>
+    <div class="rating-display">
+      <div class="stars">
+        <span class="star full">&#9733;</span>
+        <span class="star full">&#9733;</span>
+        <span class="star full">&#9733;</span>
+        <span class="star full">&#9733;</span>
+        <span class="star half">&#9733;</span>
+      </div>
+      <p class="rating-text">Rated 4.5/5 on Google</p>
+    </div>
+    <div class="cta-review">
+      <p>Leave us a review and share your experience</p>
+      <a href="https://g.page/r/CadaBBVYkvUiEBM/review"  class="review-button">Write a Review</a>
+    </div>
+  </div>
+</section>
+    
+    
+    
+  <!-- FAQ Section -->
+ <section id="faq">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+   
+  <div class="faq-card">
+    <div class="faq-item">
+      <button class="faq-question">How do I get freelance jobs?</button>
+      <div class="faq-answer">We offer training and tips to help you start and grow as a freelancer.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can DreamTech build a website for my business or personal brand?</button>
+      <div class="faq-answer">Absolutely! We offer professional web design services tailored to your needs—whether it’s a portfolio, company site, or blog.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you develop mobile apps for Android and iOS?</button>
+      <div class="faq-answer">Yes, we build responsive mobile apps for both platforms, suitable for startups, e-commerce, or custom tools.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can you help grow my business online through SEO and digital marketing?</button>
+      <div class="faq-answer">Definitely. We offer result-driven SEO, social media marketing, and online ad strategies to boost your visibility and sales.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you provide e-commerce solutions?</button>
+      <div class="faq-answer">Yes, we build and manage secure e-commerce platforms with payment integration and user-friendly interfaces.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can I get help with software installation and setup?</button>
+      <div class="faq-answer">Of course. We assist with installing, configuring, and maintaining essential software for both personal and business use.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What if I want to learn how to do these things myself?</button>
+      <div class="faq-answer">We provide structured mentorship, free tutorials, and hands-on training sessions for those who want to learn and earn.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How do I request a service or get started?</button>
+      <div class="faq-answer">Simply reach out in the group or fill out the service form on our platform. A team member will follow up promptly.</div>
+    </div>
+  </div>
+  
+</section>
+
+  <section id="contact">
+    <h2 class="section-title">Stay Connected</h2>
+    <div class="card">
+      <p>Email: dreamtech.freelance@gmail.com</p>
+      <p>WhatsApp:🇨🇲+237675874638</p>
+      <p>Facebook: DreamTech Freelance Solutions </p>
+      <p>Twitter: @dreamtech_hub</p>
+    </div>
+  </section>
+    <br>
+
+ <footer>
+  <div class="footer-container">
+    <div class="footer-column about">
+      <h3>DreamTech Freelance Solutions</h3>
+      <p>Building websites, apps, brands, and tech careers — globally. We turn ideas into impact with cutting-edge solutions and professional mentorship.</p>
+    </div>
+
+    <div class="footer-column contact">
+      <h4>Contact Us</h4>
+      <p>Email:dreamtechfreelance@gmail.com</p>
+      <p>Phone: +237675874638</p>
+      <p>Address: Remote, Global Reach</p>
+    </div>
+
+    <div class="footer-column legal">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column social">
+      <h4>Connect With Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 DreamTech Freelance Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
+  
+  <!-- Animated Welcome Message -->
+<div id="welcomeMessage" style="display: none;">
+  <span class="welcome-text">Welcome back to <span class="brand">DreamTech</span>, <span class="username"></span>!</span>
+</div>
+  
+  <!-- Overlay and Simplified Popup -->
+  <div id="popupOverlay"></div>
+  <div id="askPopup" style="display:none;">
+    <h2 style="color:#4B0082;">Welcome to DreamTech!</h2>
+    <form onsubmit="return saveUserSimple();">
+      <input type="text" id="userName" placeholder="Your Name" required>
+      <input type="tel" id="userPhone" placeholder="Phone Number" required>
+      <button type="submit" style="width:100%;">Continue</button>
+    </form>
+  </div>
+  
+  
+  
+  
+  <a href="tel:+237675874638" style="
+  position: fixed;
+  top: 300px;
+  right: 8px;
+  background: #28a745;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 9999;
+">
+  &#9742;
+</a>
+<!-- ADD THIS SCRIPT BLOCK AT THE BOTTOM JUST BEFORE </body> -->
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  }
+
+  function saveUserSimple() {
+    const name = document.getElementById('userName').value.trim();
+    const phone = document.getElementById('userPhone').value.trim();
+
+    // Save name to localStorage
+    localStorage.setItem('dreamtechUserName', name);
+
+    // Send data to backend (if needed)
+    fetch('save_user.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, phone })
+    });
+
+    document.getElementById('askPopup').style.display = "none";
+    document.getElementById('popupOverlay').style.display = "none";
+
+    // Show styled welcome message and play sound
+    showWelcomeMessage(name);
+    return false;
+  }
+
+  function showWelcomeMessage(name) {
+    const welcomeDiv = document.getElementById('welcomeMessage');
+    welcomeDiv.querySelector('.username').textContent = name;
+    welcomeDiv.style.display = 'block';
+
+    // Play sound effect
+    const audio = new Audio('notification.mp3'); // Replace with your own sound file URL
+    audio.play();
+
+    // Hide the welcome message after 3 seconds
+    setTimeout(() => {
+      welcomeDiv.style.display = 'none';
+    }, 3000);
+  }
+
+  window.onload = function () {
+    const savedName = localStorage.getItem('dreamtechUserName');
+    if (savedName) {
+      // Show the welcome message with sound on every page load
+      showWelcomeMessage(savedName);
+    } else {
+      setTimeout(() => {
+        document.getElementById("askPopup").style.display = "block";
+        document.getElementById("popupOverlay").style.display = "block";
+      }, 1000);
+    }
+  };
+  
+      // Countdown Timer
+    const targetDate = new Date("2025-06-01T09:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        countdownEl.innerText = "Event started!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  
+  
+ 
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.getElementById('mainNav');
+  const header = document.querySelector('header');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    header.classList.toggle('nav-open');
+  });
+const slides = document.querySelectorAll('.full-width-image');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  // Show the first slide initially
+  showSlide(current);
+
+  // Start auto slideshow
+  setInterval(nextSlide, 3000); // every 3 seconds
+
+    
+    
+    // Live current time display
+function updateCurrentTime() {
+  const now = new Date();
+  const timeString = now.toLocaleTimeString();
+  document.getElementById('currentTime').textContent = timeString;
+}
+setInterval(updateCurrentTime, 1000);
+updateCurrentTime();
+    
+  let currentIndex = 0;
+  const testimonials = document.querySelectorAll('.testimonial-card');
+
+  setInterval(() => {
+    testimonials[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    testimonials[currentIndex].classList.add('active');
+  }, 4000);
+    
+   
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+    
+    
+  const form = document.getElementById('contactForm');
+  const statusMsg = document.getElementById('statusMsg');
+  const loader = document.getElementById('loader');
+
+  function showMessage(message, isError = false) {
+    statusMsg.textContent = message;
+    statusMsg.style.color = isError ? 'red' : 'green';
+    statusMsg.classList.add('show');
+    setTimeout(() => statusMsg.classList.remove('show'), 4000);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    loader.style.display = 'flex';
+
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      loader.style.display = 'none';
+      return showMessage('All inputs are required', true);
+    }
+
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+      loader.style.display = 'none';
+      return showMessage('Wrong email format', true);
+    }
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch('message.php', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await res.json();
+      loader.style.display = 'none';
+
+      if (data.success) {
+        form.reset();
+        showMessage('Message sent ✅');
+      } else {
+        showMessage('Failed to send', true);
+      }
+    } catch {
+      loader.style.display = 'none';
+      showMessage('Failed to send', true);
+    }
+  });
+    
+    
+    function hideLoader(img) {
+  const loader = img.previousElementSibling;
+  if (loader && loader.classList.contains('img-loader')) {
+    loader.style.display = 'none';
+  }
+}
+</script>
+    
+    <!-- Unique Install App Modal -->
+<div id="installAppModalUnique" class="install-app-modal-unique" style="display: none;">
+  <div class="install-app-modal-content-unique">
+    <span class="install-app-close-unique" onclick="closeInstallAppModal()">close</span>
+    <img src="app-icon.png" alt="App Icon" class="install-app-icon-unique" />
+    <h3>Install DreamTech App</h3>
+    <p>Enjoy a smoother UI and faster access with our app.</p>
+    <a href="https://dreamtech-freelance.ct.ws/Dreamtech.apk" class="install-app-btn-unique" onclick="startAppDownload(this)">Download App</a>
+    <div class="install-app-dots-unique" id="installAppDotsUnique" style="display:none;">
+      <span>.</span><span>.</span><span>.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Scoped Styles -->
+<style>
+  .install-app-modal-unique {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 50, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .install-app-modal-content-unique {
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    animation: installSlideUp 0.5s ease;
+  }
+
+  .install-app-close-unique {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+  }
+
+  .install-app-icon-unique {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .install-app-btn-unique {
+    display: inline-block;
+    background:#0059b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .install-app-btn-unique:hover {
+    background: #007bff;
+  }
+
+  .install-app-dots-unique {
+    margin-top: 15px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    color: #0059b3;
+    font-weight: bold;
+  }
+
+  .install-app-dots-unique span {
+    animation: bounceDotsUnique 1s infinite ease-in-out;
+  }
+
+  .install-app-dots-unique span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .install-app-dots-unique span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes bounceDotsUnique {
+    0%, 80%, 100% { transform: scale(0.8); }
+    40% { transform: scale(1.3); }
+  }
+
+  @keyframes installSlideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  body.modal-install-app-open {
+    overflow: hidden;
+  }
+</style>
+
+<!-- Isolated Script -->
+<script>
+  function setInstallAppCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+  }
+
+  function getInstallAppCookie(name) {
+    return document.cookie.split('; ').find(row => row.startsWith(name + '='))?.split('=')[1];
+  }
+
+  function closeInstallAppModal() {
+    document.getElementById('installAppModalUnique').style.display = 'none';
+    document.body.classList.remove('modal-install-app-open');
+  }
+
+  function startAppDownload(link) {
+    document.getElementById('installAppDotsUnique').style.display = 'flex';
+    setInstallAppCookie('installAppDone', 'true', 365);
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 1000); // Simulate delay
+    return false;
+  }
+
+  window.addEventListener('load', () => {
+    const shown = getInstallAppCookie('installAppDone');
+    if (!shown) {
+      setTimeout(() => {
+        document.getElementById('installAppModalUnique').style.display = 'flex';
+        document.body.classList.add('modal-install-app-open');
+      }, 120000); // Show modal after 2 mins
+    }
+  });
+</script>
+    
+    
+    
+    
+  
+</body>
+</html>

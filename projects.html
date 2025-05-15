@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #4B0082 30%, orange);
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      height: 50px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display:grid;
+      transition: transform 0.3s ease;
+      width: 400px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project-content h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tags {
+      margin-bottom: 0.5rem;
+    }
+
+    .tag {
+      background: #4B0082;
+      color: white;
+      padding: 0.2rem 0.5rem;
+      margin-right: 0.3rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+
+    .progress-bar {
+      background: #eee;
+      border-radius: 5px;
+      height: 8px;
+      margin: 0.5rem 0;
+    }
+
+    .progress {
+      height: 100%;
+      background: orange;
+      border-radius: 5px;
+      width: 60%;
+    }
+
+    .actions {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .actions a {
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      background: #4B0082;
+      color: white;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      transition: background 0.3s ease;
+    }
+
+    .actions a:hover {
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="dreamtech-logo.png" alt="Logo" />
+    <h1>Our Projects</h1>
+  </header>
+
+  <section class="projects">
+    <div class="project-card">
+      <img src="project1.png" alt="Project Image" />
+      <div class="project-content">
+        <h2>Online Portfolio</h2>
+        <div class="tags">
+          <span class="tag">#HTML</span>
+          <span class="tag">#CSS</span>
+          <span class="tag">#JavaScript</span>
+        </div>
+        <p>Responsive portfolio website to showcase developer skills and contact links.</p>
+        <p><strong>Date:</strong> Jan 15, 2025</p>
+        <p><strong>Status:</strong> Current</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <div class="actions">
+          <a href="#">Learn More</a>
+          <a href="https://github.com/username/portfolio" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project2.png" alt="Project Image" />
+      <div class="project-content">
+        <h2>E-Commerce App</h2>
+        <div class="tags">
+          <span class="tag">#React</span>
+          <span class="tag">#Node.js</span>
+          <span class="tag">#MongoDB</span>
+        </div>
+        <p>Fully functional e-commerce application with authentication and cart features.</p>
+        <p><strong>Date:</strong> Dec 5, 2024</p>
+        <p><strong>Status:</strong> Done</p>
+        <div class="progress-bar"><div class="progress" style="width: 100%; background-color:blue;"></div></div>
+        <div class="actions">
+          <a href="#">Learn More</a>
+          <a href="https://github.com/username/ecommerce" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div class="project-card">
+      <img src="project3.png" alt="Project Image" />
+      <div class="project-content">
+        <h2>Social Media Clone</h2>
+        <div class="tags">
+          <span class="tag">#Next.js</span>
+          <span class="tag">#Firebase</span>
+        </div>
+        <hr>
+        <p>Clone of a popular social media platform with real-time features and storage.</p>
+        <p><strong>Date:</strong> Feb 10, 2025</p>
+        <p><strong>Status:</strong> Ongoing</p>
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        <div class="actions">
+          <a href="#">Learn More</a>
+          <a href="https://github.com/username/social-clone" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+      <hr>
+    <div class="project-card">
+      <img src="project4.jpg" alt="Project Image" />
+      <div class="project-content">
+        <h2>Real-Time Chat App</h2>
+        <div class="tags">
+          <span class="tag">#Socket.io</span>
+          <span class="tag">#Express</span>
+        </div>
+        <p>Messaging application with rooms, user presence, and file sharing.</p>
+        <p><strong>Date:</strong> Mar 28, 2025</p>
+        <p><strong>Status:</strong> Done</p>
+        <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+        <div class="actions">
+          <a href="#">Learn More</a>
+          <a href="https://github.com/username/chat-app" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

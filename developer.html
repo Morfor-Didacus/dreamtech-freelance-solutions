@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      padding: 40px 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-card {
+      background: #fff;
+      width: 100%;
+      max-width: 800px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cover-photo {
+      height: 200px;
+      background: linear-gradient(to right, #4B0082 30%, orange);
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: -140px;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    h2 {
+      margin: 12px 0 5px;
+      color: #333;
+    }
+
+    .email {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .link {
+      margin-top: 8px;
+      text-decoration: none;
+      color: #4B0082;
+      font-weight: bold;
+    }
+
+    .whatsapp-btn {
+      margin-top: 12px;
+      background: green;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebd58;
+    }
+
+    .section {
+      padding: 20px 30px;
+      border-top: 1px solid #eee;
+    }
+
+    .section h3 {
+      color: #4B0082;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    ul.skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    ul.skills li {
+      background: #f0f0f0;
+      padding: 8px 14px;
+      border-radius: 20px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .social-links {
+      text-align: center;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 8px;
+      color: #4B0082;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 15px 20px;
+      }
+
+      ul.skills {
+        flex-direction: column;
+      }
+
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-card">
+  <div class="cover-photo"></div>
+  <div class="profile-section">
+    <img src="didacus-profile-picture.png" class="profile-pic" alt="Profile Picture">
+    <h2>Morfor Didacus </h2>
+    <div class="email">morfordidacus@gmail.com</div>
+    <a href="https://morfolio.ct.ws" target="_blank" class="link">https://morfolio.com</a>
+    <a href="https://wa.me/+237671817580" target="_blank" class="whatsapp-btn">Follow</a>
+  </div>
+
+  <div class="section">
+    <h3>About Me</h3>
+    <p>
+      I'm a passionate software developer from the South West Region of Cameroon, and the CEO of DreamTech Freelance Solutions. Currently, I'm pursuing a Master’s degree at Chitechma University, Buea. My main programming language is JavaScript, and I specialize in building dynamic web and mobile applications using modern tools and frameworks.
+
+I enjoy solving real-world problems with code, collaborating with creative minds, and mentoring others in tech. Through DreamTech, I aim to empower freelancers and deliver innovative digital solutions that make a real impact.
+       </p>
+  </div>
+
+  <div class="section">
+    <h3>Skills</h3>
+<ul class="skills">
+  <li>Front-End Development (HTML, CSS, JavaScript, React)</li>
+  <li>Back-End Development (Node.js, PHP, Express)</li>
+  <li>Mobile App Development (Flutter, React Native)</li>
+  <li>UI/UX Design (Figma, Adobe XD, Prototyping)</li>
+  <li>Graphic & Logo Design (Photoshop, Illustrator)</li>
+  <li>SEO & Digital Marketing (On-Page, Off-Page, Ads)</li>
+  <li>Version Control & Deployment (Git, GitHub, cPanel)</li>
+  <li>Mentorship & Practical Tech Training</li>
+</ul>
+  </div>
+
+  <div class="section">
+    <h3>Services</h3>
+    <p>
+      - Website & Web App Development<br>
+      - Android & iOS App Design<br>
+      - Branding, Logo, and Design Work<br>
+      - Freelance & Portfolio Setup Guidance<br>
+      - SEO and Online Visibility Strategy<br>
+      - Coaching and Mentorship Programs<br>
+      - Social media boosting and ads<br>
+      - Content creation and strategy <br>
+    </p>
+  </div>
+
+  <div class="social-links">
+    <h3>Connect With Me</h3>
+    <a href="https://www.facebook.com/morfor.didacus.3">Facebook</a>
+    <a href=" https://www.linkedin.com/in/morfor-didacus-b3103a359">LinkedIn</a>
+    <a href="https://github.com/Morfor-Didacus">GitHub</a>
+    <a href="#">Instagram</a>
+  </div>
+</div>
+
+</body>
+</html>

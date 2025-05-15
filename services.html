@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - LearnHub</title>
+ 
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes imageChange {
+      0% { opacity: 1; }
+      33% { opacity: 0; }
+      66% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f3f3;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4B0082, green);
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+    }
+
+    .services-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0px 5px gray;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      transition: filter 0.3s ease;
+    }
+
+    .service-card img:hover {
+      filter: blur(0);
+    }
+
+    .service-card h3 {
+      padding: 15px;
+      font-size: 1.3em;
+      color: #4B0082;
+    }
+
+    .service-card p {
+      padding: 0 15px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .service-card button {
+      background:green;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin: 15px;
+    }
+
+    .service-card button:hover {
+      background:green;
+    }
+.full-width-image-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+    .full-width-image {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.full-width-image.active {
+  opacity: 1;
+  position: relative;
+}
+
+    
+
+    footer {
+      background: #4B0082;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+  </header>
+
+  <section class="hero">
+    <h2 style="text-align:center; color: #4B0082;">Our Core Services</h2>
+    <p style="text-align:center;">Explore the wide range of services we offer to help your business grow and succeed.</p>
+  </section>
+
+  <div class="full-width-image-container" id="slider">
+  <img src="service-image1.png" alt="Slide 1" class="full-width-image active" />
+  <img src="service-image2.png" alt="Slide 2" class="full-width-image" />
+  <img src="service-image3.png" alt="Slide 3" class="full-width-image" />
+  <img src="service-image4.png" alt="Slide 4" class="full-width-image" />
+  <img src="service-image5.png" alt="Slide 5" class="full-width-image" />
+  <img src="service-image6.png" alt="Slide 6" class="full-width-image" />
+     </div>
+
+<script>
+  const slides = document.querySelectorAll('.full-width-image');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  // Show the first slide initially
+  showSlide(current);
+
+  // Start auto slideshow
+  setInterval(nextSlide, 3000); // every 3 seconds
+</script>
+  <div class="services-container">
+    <div class="service-card">
+      <img src="web-development.png" alt="Web Development" />
+      <h3>Web Development</h3>
+      <p>We specialize in building responsive and dynamic websites tailored to your business needs.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="service-card">
+      <img src="app-developement.jpg" alt="App Development" />
+      <h3>App Development</h3>
+      <p>Transform your ideas into mobile apps for iOS and Android with our top-notch development services.</p>
+      <button>Get Started</button>
+    </div>
+
+    <div class="service-card">
+      <img src="graphic-design.png" alt="Graphic Design" />
+      <h3>Graphic Design</h3>
+      <p>Create stunning visuals, logos, and brand identities to make your brand stand out in the market.</p>
+      <button>Explore Now</button>
+    </div>
+
+    <div class="service-card">
+      <img src="ui-ux-design.png" alt="UI/UX Design" />
+      <h3>UI/UX Design</h3>
+      <p>Enhance your users' experience with clean, intuitive designs and seamless user interfaces.</p>
+      <button>Start Now</button>
+    </div>
+
+    <div class="service-card">
+      <img src="maintenance.png" alt="maintenance" />
+      <h3>Software Maintenance</h3>
+      <p>Your one stop shop for maintaining all your computer , mobile devices and other electronic devices .</p>
+      <button>Hire Us</button>
+    </div>
+    
+    <div class="service-card">
+      <img src="seo.png" alt="SEO Services" />
+      <h3>SEO Services</h3>
+      <p>Improve your website's visibility and drive organic traffic with our effective SEO strategies.</p>
+      <button>Optimize Now</button>
+    </div>
+
+    <div class="service-card">
+      <img src="hosting.png" alt="Web Hosting" />
+      <h3>Web Hosting</h3>
+      <p>Reliable and secure web hosting services to keep your website up and running smoothly.</p>
+      <button>Host with Us</button>
+    </div>
+
+    <div class="service-card">
+      <img src="mentorship.png" alt="Mentorship" />
+      <h3>Mentorship</h3>
+      <p>Gain expert guidance in web development, app development, and design through our mentorship programs.</p>
+      <button>Join Mentorship</button>
+    </div>
+
+    <div class="service-card">
+      <img src="installation.jpg" alt="Software Installation" />
+      <h3>Software Installation</h3>
+      <p>Get help installing and configuring software solutions for your business needs.</p>
+      <button>Contact Us</button>
+    </div>
+
+    <div class="service-card">
+      <img src="LearnHub.png" alt="LearnHub Connect" />
+      <h3>LearnHub Connect</h3>
+      <p>Join our platform to access exclusive courses and collaborate with peers.</p>
+      <button>Join Now</button>
+    </div>
+    
+    
+  </div>
+
+  <footer>
+    <p>&copy; 2025 LearnHub. Empowering Innovators Daily.</p>
+  </footer>
+   
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "87c84783-2bb4-4158-8c92-e06b59d90909",
+      safari_web_id: "web.onesignal.auto.2465995d-af39-44d0-9727-0f4afeb298e1",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+</body>
+</html>
